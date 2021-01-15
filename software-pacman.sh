@@ -32,10 +32,12 @@ PKGS=(
     'zsh-completions'       # Tab completion for ZSH
     'zsh-autosuggestions'
     'zsh-syntax-highlighting'
-    'gawk'                       # For roficlip
+    'gawk'                  # For roficlip
     'htop'
     'gtop'
     'fzf'
+    'jq'                    # JSON parsing library
+    'jshon'                 # JSON parsing library
 
     # DISK UTILITIES ------------------------------------------------------
 
