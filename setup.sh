@@ -13,9 +13,9 @@ echo "Installing Other Programs"
 bash -c "$(wget -q -O - https://linux.kite.com/dls/linux/current)" # Kite Installer
 
 git clone "https://github.com/JoelErmantraut1/dotfiles.git"
-sudo mv -f /dotfiles/* ${HOME}
+sudo mv -f /dotfiles/* /home/joel
 
-systemctl enable lightdm
+sudo systemctl enable lightdm
 
 echo "All ready"
 echo
