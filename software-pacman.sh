@@ -106,7 +106,6 @@ PKGS=(
 
     # PRODUCTIVITY --------------------------------------------------------
 
-    'libreoffice-fresh'     # Libre office with extra features
     'xpdf'                  # PDF viewer
 
     # THEMES --------------------------------------------------------------

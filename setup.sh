@@ -12,9 +12,7 @@ export HOME=/home/joel
 ./software-aur.sh
 ./software-git.sh
 ./software-python.sh
-
-echo "Installing Other Programs"
-bash -c "$(wget -q -O - https://linux.kite.com/dls/linux/current)" # Kite Installer
+./software-general.sh
 
 sudo git clone "https://github.com/JoelErmantraut1/dotfiles.git"
 cd dotfiles
@@ -23,18 +21,26 @@ sudo rm .gitignore
 sudo rm README.md
 cd ..
 yes | sudo cp -r dotfiles/. $HOME
+# Copy config files
 
-sudo systemctl enable lightdm
+cd $HOME
+mkdir Documentos/Centro
+mkdir Imagenes
+mkdir Videos
+# Create home directories
 
 echo
 echo "Configuring MAKEPKG to use all 8 cores"
 sudo sed -i -e 's|[#]*MAKEFLAGS=.*|MAKEFLAGS="-j$(nproc)"|g' makepkg.conf
 sudo sed -i -e 's|[#]*COMPRESSXZ=.*|COMPRESSXZ=(xz -c -T 8 -z -)|g' makepkg.conf
 
+sudo systemctl enable lightdm
+
 echo "All ready"
 echo
 echo "Don't forget to install:"
 echo "-- z plugin for zsh"
+echo "-- Configure Grub"
 
 echo
 echo "Setup Done"

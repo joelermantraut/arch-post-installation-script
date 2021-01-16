@@ -8,7 +8,7 @@ PKGS=(
     "pynput"
     "mouse"
     "keyboard"
-    "screeinfo"
+    "screeninfo"
 )
 
 for PKG in "${PKGS[@]}"; do

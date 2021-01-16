@@ -11,7 +11,7 @@ PKGS=(
     'dropbox'                   # Cloud file storage
     'roficlip'
     'clipster'
-    #'brave'
+    'brave'
     'franz'
     'foxitreader'
     'unetbootin'
@@ -31,6 +31,11 @@ PKGS=(
     'truestudio'
     'ttf-jetbrains-mono'        # Jetbrains Installer
     'prepros-bin'
+
+    # PRODUCTIVITY -------------------------------------------------------
+
+    'wps-office'
+    'ttf-wps-fonts'
 
     # MEDIA ---------------------------------------------------------------
 
