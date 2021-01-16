@@ -4,9 +4,6 @@ echo
 
 cd "${HOME}"
 
-#echo "CLOING: AURIC"
-#git clone "https://github.com/rickellis/AURIC.git"
-
 PKGS=(
 
     # UTILITIES -----------------------------------------------------------
@@ -14,7 +11,7 @@ PKGS=(
     'dropbox'                   # Cloud file storage
     'roficlip'
     'clipster'
-    'brave'
+    #'brave'
     'franz'
     'foxitreader'
     'unetbootin'
@@ -44,13 +41,6 @@ PKGS=(
     'adapta-gtk-theme-git'
     'lightdm-webkit-theme-aether'
 )
-
-#cd ${HOME}/AURIC
-#chmod +x auric.sh
-
-#for PKG in "${PKGS[@]}"; do
-    #./auric.sh -i $PKG
-#done
 
 # Install Yay before use AUR
 git clone https://aur.archlinux.org/yay.git
