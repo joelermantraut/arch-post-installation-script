@@ -21,11 +21,6 @@ makepkg -si
 sudo systemctl enable --now snapd.socket
 sudo ln -s /var/lib/snapd/snap /snap
 
-# Install Yay
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-
 echo
 echo "Git Software Installed"
 echo

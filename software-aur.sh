@@ -4,8 +4,8 @@ echo
 
 cd "${HOME}"
 
-echo "CLOING: AURIC"
-git clone "https://github.com/rickellis/AURIC.git"
+#echo "CLOING: AURIC"
+#git clone "https://github.com/rickellis/AURIC.git"
 
 PKGS=(
 
@@ -45,11 +45,20 @@ PKGS=(
     'lightdm-webkit-theme-aether'
 )
 
-cd ${HOME}/AURIC
-chmod +x auric.sh
+#cd ${HOME}/AURIC
+#chmod +x auric.sh
+
+#for PKG in "${PKGS[@]}"; do
+    #./auric.sh -i $PKG
+#done
+
+# Install Yay before use AUR
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
 
 for PKG in "${PKGS[@]}"; do
-    ./auric.sh -i $PKG
+    yay -S $PKG --noeditmenu --noconfirm
 done
 
 echo
