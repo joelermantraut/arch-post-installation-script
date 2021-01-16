@@ -8,9 +8,10 @@ PKGS=(
     'dmenu'
     'rofi'
     'dunst'
-    'lightdm'
-    'lightdm-gtk-greeter'
-    'lightdm-webkit2-greeter'
+    'gdm'
+    #'lightdm'
+    #'lightdm-gtk-greeter'
+    #'lightdm-webkit2-greeter'
 )
 
 for PKG in "${PKGS[@]}"; do
