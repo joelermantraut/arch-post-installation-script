@@ -15,6 +15,7 @@ PKGS=(
     'franz'
     'foxitreader'
     'unetbootin'
+    'xdman'
 
     # TERMINAL ------------------------------------------------------------
 
@@ -45,7 +46,7 @@ PKGS=(
 # Install Yay before use AUR
 git clone https://aur.archlinux.org/yay.git
 cd yay
-makepkg -si
+makepkg -si --noconfirm
 
 for PKG in "${PKGS[@]}"; do
     yay -S $PKG --noeditmenu --noconfirm

@@ -5,16 +5,16 @@ echo
 export HOME=/home/joel
 # Declare variables
 
-#./xorg.sh
-#./audio.sh
-#./desktop.sh
-#./software-pacman.sh
-#./software-aur.sh
-#./software-git.sh
-#./software-python.sh
+./xorg.sh
+./audio.sh
+./desktop.sh
+./software-pacman.sh
+./software-aur.sh
+./software-git.sh
+./software-python.sh
 
 echo "Installing Other Programs"
-#bash -c "$(wget -q -O - https://linux.kite.com/dls/linux/current)" # Kite Installer
+bash -c "$(wget -q -O - https://linux.kite.com/dls/linux/current)" # Kite Installer
 
 sudo git clone "https://github.com/JoelErmantraut1/dotfiles.git"
 cd dotfiles
@@ -24,7 +24,7 @@ sudo rm README.md
 cd ..
 yes | sudo cp -r dotfiles/. $HOME
 
-#sudo systemctl enable lightdm
+sudo systemctl enable lightdm
 
 echo
 echo "Configuring MAKEPKG to use all 8 cores"
