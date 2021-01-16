@@ -10,7 +10,7 @@ PKGS=(
     'dunst'
     'lightdm'
     'lightdm-webkit-greeter'
-    'lightdm-gtk-greeter'
+    'lightdm-webkit2-greeter'
 )
 
 for PKG in "${PKGS[@]}"; do
