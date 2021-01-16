@@ -9,7 +9,6 @@ PKGS=(
     'rofi'
     'dunst'
     'lightdm'
-    'lightdm-webkit-greeter'
     'lightdm-webkit2-greeter'
 )
 

@@ -78,6 +78,7 @@ PKGS=(
     'php-apache'            # Apache PHP driver
     'postfix'               # SMTP mail server
     'python'                # Scripting language
+    'python-pip'
     'neovim'
     'gedit'
     'nano'

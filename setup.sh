@@ -14,6 +14,10 @@ export HOME=/home/joel
 ./software-python.sh
 ./software-general.sh
 
+echo
+echo "Creating folders and copying files"
+echo
+
 sudo git clone "https://github.com/JoelErmantraut1/dotfiles.git"
 cd dotfiles
 sudo rm -r .git
@@ -24,13 +28,21 @@ yes | sudo cp -r dotfiles/. $HOME
 # Copy config files
 
 cd $HOME
+mkdir Documentos
 mkdir Documentos/Centro
 mkdir Imagenes
 mkdir Videos
 # Create home directories
 
+# Copy images to directory (will require access)
+cd Imagenes
+git clone https://github.com/JoelErmantraut1/wallpapers.git
+mv wallpapers slideshow
+
 echo
 echo "Configuring MAKEPKG to use all 8 cores"
+echo
+cd /etc/
 sudo sed -i -e 's|[#]*MAKEFLAGS=.*|MAKEFLAGS="-j$(nproc)"|g' makepkg.conf
 sudo sed -i -e 's|[#]*COMPRESSXZ=.*|COMPRESSXZ=(xz -c -T 8 -z -)|g' makepkg.conf
 
