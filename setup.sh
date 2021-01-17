@@ -46,8 +46,7 @@ cd /etc/
 sudo sed -i -e 's|[#]*MAKEFLAGS=.*|MAKEFLAGS="-j$(nproc)"|g' makepkg.conf
 sudo sed -i -e 's|[#]*COMPRESSXZ=.*|COMPRESSXZ=(xz -c -T 8 -z -)|g' makepkg.conf
 
-#sudo systemctl enable lightdm
-sudo systemctl enable gdm
+sudo systemctl enable lightdm
 
 echo "All ready"
 echo
