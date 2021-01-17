@@ -11,7 +11,7 @@ PKGS=(
     'dropbox'                   # Cloud file storage
     'roficlip'
     'clipster'
-    'brave'
+    #'brave'
     'franz'
     'foxitreader'
     'unetbootin'
