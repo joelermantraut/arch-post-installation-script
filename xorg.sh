@@ -1,6 +1,8 @@
-echo
-echo "Running Xorg Installation Script"
-echo
+#!/bin/bash
+
+. functions.sh
+
+printf_c "Running Xorg Installation Script"
 
 PKGS=(
     'xorg-server'           # XOrg server
@@ -16,6 +18,4 @@ for PKG in "${PKGS[@]}"; do
     sudo pacman -S "$PKG" --noconfirm --needed
 done
 
-echo
-echo "Xorg Components Installed"
-echo
+printf_c "Xorg Components Installed"

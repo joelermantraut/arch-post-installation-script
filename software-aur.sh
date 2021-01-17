@@ -1,6 +1,8 @@
-echo
-echo "Running AUR Software Installation"
-echo
+#!/bin/bash
+
+. functions.sh
+
+printf_c "Running AUR Software Installation"
 
 cd "${HOME}"
 
@@ -11,7 +13,6 @@ PKGS=(
     'dropbox'                   # Cloud file storage
     'roficlip'
     'clipster'
-    #'brave'
     'franz'
     'foxitreader'
     'unetbootin'
@@ -57,6 +58,4 @@ for PKG in "${PKGS[@]}"; do
     yay -S $PKG --noeditmenu --noconfirm
 done
 
-echo
-echo "AUR Software Installed"
-echo
+printf_c "AUR Software Installed"

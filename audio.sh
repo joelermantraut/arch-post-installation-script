@@ -1,6 +1,8 @@
-echo
-echo "Running Audio Installation Script"
-echo
+#!/bin/bash
+
+. functions.sh
+
+printf_c "Running Audio Installation Script"
 
 PKGS=(
     'alsa-utils'        # Advanced Linux Sound Architecture (ALSA) Components https://alsa.opensrc.org/
@@ -16,6 +18,4 @@ for PKG in "${PKGS[@]}"; do
     sudo pacman -S "$PKG" --noconfirm --needed
 done
 
-echo
-echo "Audio Components Installed"
-echo
+printf_c "Audio Components Installed"

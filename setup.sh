@@ -1,6 +1,8 @@
-echo
-echo "Running Setup"
-echo
+#!/bin/bash
+
+. functions.sh
+
+printf_c "Running Setup"
 
 export HOME=/home/joel
 # Declare variables
@@ -14,9 +16,7 @@ export HOME=/home/joel
 ./software-python.sh
 ./software-general.sh
 
-echo
-echo "Creating folders and copying files"
-echo
+printf_c "Creating folders and copying files"
 
 sudo git clone "https://github.com/JoelErmantraut1/dotfiles.git"
 cd dotfiles
@@ -39,21 +39,18 @@ cd Imagenes
 git clone https://github.com/JoelErmantraut1/wallpapers.git
 mv wallpapers slideshow
 
-echo
-echo "Configuring MAKEPKG to use all 8 cores"
-echo
+printf_c "Configuring MAKEPKG to use all 8 cores"
+
 cd /etc/
 sudo sed -i -e 's|[#]*MAKEFLAGS=.*|MAKEFLAGS="-j$(nproc)"|g' makepkg.conf
 sudo sed -i -e 's|[#]*COMPRESSXZ=.*|COMPRESSXZ=(xz -c -T 8 -z -)|g' makepkg.conf
 
 sudo systemctl enable lightdm
 
-echo "All ready"
-echo
+printf_c "All ready"
+
 echo "Don't forget to install:"
 echo "-- z plugin for zsh"
 echo "-- Configure Grub"
 
-echo
-echo "Setup Done"
-echo
+printf_c "Setup Done"

@@ -1,6 +1,8 @@
-echo
-echo "Running Desktop Installation Script"
-echo
+#!/bin/bash
+
+. functions.sh
+
+printf_c "Running Desktop Installation Script"
 
 PKGS=(
     'qtile'
@@ -9,9 +11,8 @@ PKGS=(
     'rofi'
     'dunst'
     'gdm'
-    #'lightdm'
-    #'lightdm-gtk-greeter'
-    #'lightdm-webkit2-greeter'
+    'lightdm'
+    'lightdm-webkit2-greeter'
 )
 
 for PKG in "${PKGS[@]}"; do
@@ -19,6 +20,4 @@ for PKG in "${PKGS[@]}"; do
     sudo pacman -S "$PKG" --noconfirm --needed
 done
 
-echo
-echo "Desktop Components Installed"
-echo
+printf_c "Desktop Components Installed"

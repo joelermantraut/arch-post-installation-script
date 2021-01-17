@@ -1,6 +1,8 @@
-echo
-echo "Running Pacman Software Installation"
-echo
+#!/bin/bash
+
+. functions.sh
+
+printf_c "Running Pacman Software Installation"
 
 PKGS=(
 
@@ -38,6 +40,7 @@ PKGS=(
     'fzf'
     'jq'                    # JSON parsing library
     'jshon'                 # JSON parsing library
+    'lm_sensors'
 
     # DISK UTILITIES ------------------------------------------------------
 
@@ -125,7 +128,4 @@ for PKG in "${PKGS[@]}"; do
     sudo pacman -S "$PKG" --noconfirm --needed
 done
 
-echo
-echo "Software from Pacman Installed"
-echo
-
+printf_c "Software from Pacman Installed"

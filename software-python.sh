@@ -1,6 +1,8 @@
-echo
-echo "Running Python Dependencies Installation"
-echo
+#!/bin/bash
+
+. functions.sh
+
+printf_c "Running Python Dependencies Installation"
 
 PKGS=(
     "psutil"
@@ -16,7 +18,4 @@ for PKG in "${PKGS[@]}"; do
     pip install "$PKG"
 done
 
-echo
-echo "Python Dependencies Installed"
-echo
-
+printf_c "Python Dependencies Installed"
