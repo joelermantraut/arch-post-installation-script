@@ -41,6 +41,8 @@ PKGS=(
     'jq'                    # JSON parsing library
     'jshon'                 # JSON parsing library
     'lm_sensors'
+    'bpython'
+    'fff'
 
     # DISK UTILITIES ------------------------------------------------------
 

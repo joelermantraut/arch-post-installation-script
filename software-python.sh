@@ -11,6 +11,7 @@ PKGS=(
     "mouse"
     "keyboard"
     "screeninfo"
+    "selenium"
 )
 
 for PKG in "${PKGS[@]}"; do

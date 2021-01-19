@@ -17,6 +17,7 @@ PKGS=(
     'foxitreader'
     'unetbootin'
     'xdman'
+    'google-chrome'
 
     # TERMINAL ------------------------------------------------------------
 
