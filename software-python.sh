@@ -12,6 +12,10 @@ PKGS=(
     "keyboard"
     "screeninfo"
     "selenium"
+    "pypdf2"
+    "pygame"
+    "pyautogui"
+    "selenium"
 )
 
 for PKG in "${PKGS[@]}"; do
