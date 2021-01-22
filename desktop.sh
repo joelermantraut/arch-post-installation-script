@@ -10,8 +10,8 @@ PKGS=(
     'dmenu'
     'rofi'
     'dunst'
-    'gdm'
     'lightdm'
+    'lightdm-gtk-greeter'
     'lightdm-webkit2-greeter'
 )
 
