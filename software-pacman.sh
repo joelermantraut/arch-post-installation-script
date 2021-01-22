@@ -96,6 +96,7 @@ PKGS=(
     'firefox'               # Web browser
     'filezilla'             # FTP Client
     'flashplugin'           # Flash
+    'discord'
 
     # MEDIA ---------------------------------------------------------------
 
