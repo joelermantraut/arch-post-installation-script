@@ -18,6 +18,7 @@ PKGS=(
     'unetbootin'
     'xdman'
     'google-chrome'
+    'translate-shell'
 
     # TERMINAL ------------------------------------------------------------
 
