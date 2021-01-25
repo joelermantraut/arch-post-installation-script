@@ -89,6 +89,9 @@ PKGS=(
     'nano'
     'sublime-text'          # Text editors
     'kompare'
+    'arduino'
+    'arduino-cli'
+    'arduino-avr-core'      # Arduino support
 
     # WEB TOOLS -----------------------------------------------------------
 
