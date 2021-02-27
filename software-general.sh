@@ -1,7 +1,5 @@
 printf_c "Installing Other Programs"
 
-bash -c "$(wget -q -O - https://linux.kite.com/dls/linux/current)" # Kite Installer
-
 # Install Droid-Cam
 wget -O droidcam_latest.zip https://files.dev47apps.net/linux/droidcam_1.7.1.zip
 unzip droidcam_latest.zip -d droidcam

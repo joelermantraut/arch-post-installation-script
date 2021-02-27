@@ -50,7 +50,6 @@ sudo systemctl enable lightdm
 printf_c "All ready"
 
 echo "Don't forget to install:"
-echo "-- z plugin for zsh"
 echo "-- Configure Grub"
 
 printf_c "Setup Done"

@@ -43,6 +43,7 @@ PKGS=(
     'lm_sensors'
     'bpython'
     'fff'
+    'exa'
 
     # DISK UTILITIES ------------------------------------------------------
 
@@ -64,6 +65,7 @@ PKGS=(
     'rofimoji'
     'lxappearance'
     'picom'
+    'feh'
 
     # DEVELOPMENT ---------------------------------------------------------
 
@@ -92,13 +94,13 @@ PKGS=(
     'arduino'
     'arduino-cli'
     'arduino-avr-core'      # Arduino support
+    'octave'
+    'pycharm-community-edition'
 
     # WEB TOOLS -----------------------------------------------------------
 
     'chromium'              # Web browser
     'firefox'               # Web browser
-    'filezilla'             # FTP Client
-    'flashplugin'           # Flash
     'discord'
 
     # MEDIA ---------------------------------------------------------------
@@ -131,7 +133,7 @@ PKGS=(
 
 for PKG in "${PKGS[@]}"; do
     echo "Installing: ${PKG}"
-    sudo pacman -S "$PKG" --noconfirm --needed
+    sudo pacman -S "$PKG" --noconfirm --needed 2> ~/errors.txt
 done
 
 printf_c "Software from Pacman Installed"

@@ -35,6 +35,10 @@ PKGS=(
     'ttf-jetbrains-mono'        # Jetbrains Installer
     'prepros-bin'
 
+    # OCTAVE -------------------------------------------------------------
+
+    'octave-symbolic'
+
     # PRODUCTIVITY -------------------------------------------------------
 
     'wps-office'
@@ -57,7 +61,7 @@ cd yay
 makepkg -si --noconfirm
 
 for PKG in "${PKGS[@]}"; do
-    yay -S $PKG --noeditmenu --noconfirm
+    yay -S $PKG --noeditmenu --noconfirm 2> ~/errors.txt
 done
 
 printf_c "AUR Software Installed"

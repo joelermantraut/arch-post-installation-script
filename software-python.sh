@@ -16,11 +16,14 @@ PKGS=(
     "pygame"
     "pyautogui"
     "selenium"
+    "neovim-remote"
+    # OCTAVE DEPENDENCIES
+    "sympy==1.5.1"
 )
 
 for PKG in "${PKGS[@]}"; do
     echo "Installing Python: ${PKG}"
-    pip install "$PKG"
+    pip install "$PKG" 2> ~/errors.txt
 done
 
 printf_c "Python Dependencies Installed"

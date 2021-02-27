@@ -17,7 +17,7 @@ PKGS=(
 
 for PKG in "${PKGS[@]}"; do
     echo "Installing ${PKG}"
-    sudo pacman -S "$PKG" --noconfirm --needed
+    sudo pacman -S "$PKG" --noconfirm --needed 2> ~/errors.txt
 done
 
 printf_c "Desktop Components Installed"
