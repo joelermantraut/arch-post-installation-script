@@ -54,7 +54,6 @@ PKGS=(
 
     # GENERAL UTILITIES ---------------------------------------------------
 
-    'nitrogen'              # Wallpaper changer
     'pass'                  # Password manager
     'qutebrowser'
     'krusader'
@@ -66,6 +65,10 @@ PKGS=(
     'lxappearance'
     'picom'
     'feh'
+    'spotblock'
+    'mtpfs'
+    'gvfs-mtp'
+    'gvfs-gphoto2'
 
     # DEVELOPMENT ---------------------------------------------------------
 
@@ -78,12 +81,10 @@ PKGS=(
     'gcc'                   # C/C++ compiler
     'glibc'                 # C libraries
     'mariadb'               # Drop-in replacement for MySQL
-    'meld'                  # File/directory comparison
     'nodejs'                # Javascript runtime environment
     'npm'                   # Node package manager
     'php'                   # Web application scripting language
     'php-apache'            # Apache PHP driver
-    'postfix'               # SMTP mail server
     'python'                # Scripting language
     'python-pip'
     'neovim'
@@ -118,7 +119,7 @@ PKGS=(
 
     # PRODUCTIVITY --------------------------------------------------------
 
-    'xpdf'                  # PDF viewer
+    'mupdf'                  # PDF viewer
 
     # THEMES --------------------------------------------------------------
 

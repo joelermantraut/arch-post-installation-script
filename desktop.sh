@@ -5,7 +5,8 @@
 printf_c "Running Desktop Installation Script"
 
 PKGS=(
-    'qtile'
+    'i3'
+    'polybar'
     'fluxbox'
     'dmenu'
     'rofi'
@@ -13,6 +14,7 @@ PKGS=(
     'lightdm'
     'lightdm-gtk-greeter'
     'lightdm-webkit2-greeter'
+    'betterlockscreen'
 )
 
 for PKG in "${PKGS[@]}"; do

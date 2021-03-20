@@ -45,7 +45,16 @@ cd /etc/
 sudo sed -i -e 's|[#]*MAKEFLAGS=.*|MAKEFLAGS="-j$(nproc)"|g' makepkg.conf
 sudo sed -i -e 's|[#]*COMPRESSXZ=.*|COMPRESSXZ=(xz -c -T 8 -z -)|g' makepkg.conf
 
+printf_c "Enabling Services"
+
 sudo systemctl enable lightdm
+
+systemctl --user enable spotblock   
+systemctl --user start spotblock   
+
+cp betterlockscreen@.service /etc/systemd/system/
+systemctl enable betterlockscreen@$USER
+systemctl disable betterlockscreen@$USER
 
 printf_c "All ready"
 
