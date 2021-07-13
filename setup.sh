@@ -11,10 +11,10 @@ touch errors.txt
 cd - # Back to script folder
 # Create errors file
 
-sudo ./xorg.sh
-sudo ./audio.sh
-sudo ./desktop.sh
-sudo ./software-pacman.sh
+./xorg.sh
+./audio.sh
+./desktop.sh
+./software-pacman.sh
 ./software-aur.sh
 ./software-git.sh
 ./software-python.sh
@@ -22,12 +22,12 @@ sudo ./software-pacman.sh
 
 printf_c "Creating folders and copying files"
 
-sudo git clone https://github.com/joelermantraut/dotfiles.git
+git clone https://github.com/joelermantraut/dotfiles.git
 cd dotfiles
-sudo rm -r .git
-sudo rm .gitignore README.md
+rm -r .git
+rm .gitignore README.md
 cd ..
-yes | sudo cp -r dotfiles/. $HOME
+yes | cp -r dotfiles/. $HOME
 # Copy config files
 
 cd $HOME

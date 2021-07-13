@@ -4,8 +4,6 @@
 
 printf_c "Running AUR Software Installation"
 
-cd "${HOME}"
-
 PKGS=(
 
     # UTILITIES -----------------------------------------------------------
@@ -58,6 +56,7 @@ PKGS=(
 )
 
 # Install Yay before use AUR
+cd $HOME
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si --noconfirm
