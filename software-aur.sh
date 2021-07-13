@@ -13,7 +13,6 @@ PKGS=(
     'dropbox'                   # Cloud file storage
     'roficlip'
     'clipster'
-    'franz'
     'foxitreader'
     'unetbootin'
     'xdman'
@@ -28,6 +27,7 @@ PKGS=(
 
     'grub-customizer'
     'betterlockscreen'
+    'polybar'
 
     # DEVELOPMENT ---------------------------------------------------------
     

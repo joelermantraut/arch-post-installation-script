@@ -6,7 +6,6 @@ printf_c "Running Desktop Installation Script"
 
 PKGS=(
     'i3'
-    'polybar'
     'fluxbox'
     'dmenu'
     'rofi'
