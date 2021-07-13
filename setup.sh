@@ -22,11 +22,10 @@ sudo ./software-pacman.sh
 
 printf_c "Creating folders and copying files"
 
-sudo git clone "https://github.com/JoelErmantraut1/dotfiles.git"
+sudo git clone https://github.com/joelermantraut/dotfiles.git
 cd dotfiles
 sudo rm -r .git
-sudo rm .gitignore
-sudo rm README.md
+sudo rm .gitignore README.md
 cd ..
 yes | sudo cp -r dotfiles/. $HOME
 # Copy config files
@@ -41,7 +40,7 @@ mkdir Videos
 # Copy images to directory
 cd Imagenes
 git clone https://github.com/joelermantraut/wallpapers.git
-mv wallpapers slideshow
+mv wallpapers slideshow # Change name
 
 printf_c "Configuring MAKEPKG to use all 8 cores"
 
@@ -51,7 +50,7 @@ sudo sed -i -e 's|[#]*COMPRESSXZ=.*|COMPRESSXZ=(xz -c -T 8 -z -)|g' makepkg.conf
 
 printf_c "Enabling Services"
 
-sudo systemctl enable lightdm
+sudo systemctl enable lightdm.service
 
 systemctl --user enable spotblock
 systemctl --user start spotblock
