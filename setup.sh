@@ -11,6 +11,10 @@ touch errors.txt
 cd - # Back to script folder
 # Create errors file
 
+# Before installing, we do complete update.
+sudo pacman -Syu --noconfirm --needed 2> ~/errors.txt
+
+# Start installing
 ./xorg.sh
 ./audio.sh
 ./desktop.sh
@@ -24,8 +28,8 @@ printf_c "Creating folders and copying files"
 
 git clone https://github.com/joelermantraut/dotfiles.git
 cd dotfiles
-rm -r .git
-rm .gitignore README.md
+yes | rm -r .git
+yes | rm .gitignore README.md
 cd ..
 yes | cp -r dotfiles/. $HOME
 # Copy config files

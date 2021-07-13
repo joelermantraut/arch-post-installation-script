@@ -14,7 +14,7 @@ The files and their content are:
 
 - xorg.sh: Files for XOrg installation and utilities ot extras related.
 - audio.sh: Pulseaudio and alsa utilities.
-- desktop.sh: Qtile and Fluxbox windows managers. Lightdm as session manager.
+- desktop.sh: i3 and fluxbox windows managers. Lightdm as session manager.
 - software-* files: Install software from Pacman, AUR (using Yay helper for complete automation), Python PIP and
 other stuff (general).
 - functions.sh: Includes common functions.
