@@ -6,11 +6,15 @@ printf_c "Running Setup"
 
 export HOME=/home/joel
 # Declare variables
+cd $HOME
+touch errors.txt
+cd - # Back to script folder
+# Create errors file
 
-./xorg.sh
-./audio.sh
-./desktop.sh
-./software-pacman.sh
+sudo ./xorg.sh
+sudo ./audio.sh
+sudo ./desktop.sh
+sudo ./software-pacman.sh
 ./software-aur.sh
 ./software-git.sh
 ./software-python.sh
@@ -34,9 +38,9 @@ mkdir Imagenes
 mkdir Videos
 # Create home directories
 
-# Copy images to directory (will require access)
+# Copy images to directory
 cd Imagenes
-git clone https://github.com/JoelErmantraut1/wallpapers.git
+git clone https://github.com/joelermantraut/wallpapers.git
 mv wallpapers slideshow
 
 printf_c "Configuring MAKEPKG to use all 8 cores"
@@ -49,8 +53,8 @@ printf_c "Enabling Services"
 
 sudo systemctl enable lightdm
 
-systemctl --user enable spotblock   
-systemctl --user start spotblock   
+systemctl --user enable spotblock
+systemctl --user start spotblock
 
 cp betterlockscreen@.service /etc/systemd/system/
 systemctl enable betterlockscreen@$USER

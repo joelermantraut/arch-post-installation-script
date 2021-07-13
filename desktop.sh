@@ -14,7 +14,6 @@ PKGS=(
     'lightdm'
     'lightdm-gtk-greeter'
     'lightdm-webkit2-greeter'
-    'betterlockscreen'
 )
 
 for PKG in "${PKGS[@]}"; do

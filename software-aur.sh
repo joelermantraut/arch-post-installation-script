@@ -27,6 +27,7 @@ PKGS=(
     # SETTINGS
 
     'grub-customizer'
+    'betterlockscreen'
 
     # DEVELOPMENT ---------------------------------------------------------
     
