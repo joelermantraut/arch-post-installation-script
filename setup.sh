@@ -14,6 +14,12 @@ cd - # Back to script folder
 # Before installing, we do complete update.
 sudo pacman -Syu --noconfirm --needed 2> ~/errors.txt
 
+printf_c "Configuring MAKEPKG to use all 8 cores"
+
+cd /etc/
+sudo sed -i -e 's|[#]*MAKEFLAGS=.*|MAKEFLAGS="-j$(nproc)"|g' makepkg.conf
+sudo sed -i -e 's|[#]*COMPRESSXZ=.*|COMPRESSXZ=(xz -c -T 8 -z -)|g' makepkg.conf
+
 # Start installing
 ./xorg.sh
 ./audio.sh
@@ -45,12 +51,6 @@ mkdir Videos
 cd Imagenes
 git clone https://github.com/joelermantraut/wallpapers.git
 mv wallpapers slideshow # Change name
-
-printf_c "Configuring MAKEPKG to use all 8 cores"
-
-cd /etc/
-sudo sed -i -e 's|[#]*MAKEFLAGS=.*|MAKEFLAGS="-j$(nproc)"|g' makepkg.conf
-sudo sed -i -e 's|[#]*COMPRESSXZ=.*|COMPRESSXZ=(xz -c -T 8 -z -)|g' makepkg.conf
 
 printf_c "Enabling Services"
 

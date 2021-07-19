@@ -16,6 +16,7 @@ PKGS=(
     'xdman'
     'google-chrome'
     'translate-shell'
+    'brave-bin'
 
     # TERMINAL ------------------------------------------------------------
 
@@ -33,6 +34,7 @@ PKGS=(
     'truestudio'
     'ttf-jetbrains-mono'        # Jetbrains Installer
     'prepros-bin'
+    'sublime-text'          # Text editors
 
     # OCTAVE -------------------------------------------------------------
 
@@ -42,6 +44,7 @@ PKGS=(
 
     'wps-office'
     'ttf-wps-fonts'
+    'nerd-fonts-ubuntu-mono'
 
     # MEDIA ---------------------------------------------------------------
 

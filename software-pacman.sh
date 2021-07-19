@@ -11,6 +11,7 @@ PKGS=(
     'linux-lts'             # Long term support kernel
     'urxvt'
     'xterm'
+    'pacman-contrib'
 
     # TERMINAL UTILITIES --------------------------------------------------
 
@@ -44,6 +45,9 @@ PKGS=(
     'bpython'
     'fff'
     'exa'
+    'network-manager-applet'
+    'localt'
+    'figlet'
 
     # DISK UTILITIES ------------------------------------------------------
 
@@ -69,6 +73,7 @@ PKGS=(
     'mtpfs'
     'gvfs-mtp'
     'gvfs-gphoto2'
+    'trash-cli'
 
     # DEVELOPMENT ---------------------------------------------------------
 
@@ -77,7 +82,6 @@ PKGS=(
     'clang'                 # C Lang compiler
     'cmake'                 # Cross-platform open-source make system
     'electron'              # Cross-platform development using Javascript
-    'git'                   # Version control system
     'gcc'                   # C/C++ compiler
     'glibc'                 # C libraries
     'mariadb'               # Drop-in replacement for MySQL
@@ -90,7 +94,6 @@ PKGS=(
     'neovim'
     'gedit'
     'nano'
-    'sublime-text'          # Text editors
     'kompare'
     'arduino'
     'arduino-cli'
