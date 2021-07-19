@@ -6,10 +6,6 @@ printf_c "Running Setup"
 
 export HOME=/home/joel
 # Declare variables
-cd $HOME
-touch errors.txt
-cd - # Back to script folder
-# Create errors file
 
 # Before installing, we do complete update.
 sudo pacman -Syu --noconfirm --needed 2> ~/errors.txt
@@ -19,6 +15,7 @@ printf_c "Configuring MAKEPKG to use all 8 cores"
 cd /etc/
 sudo sed -i -e 's|[#]*MAKEFLAGS=.*|MAKEFLAGS="-j$(nproc)"|g' makepkg.conf
 sudo sed -i -e 's|[#]*COMPRESSXZ=.*|COMPRESSXZ=(xz -c -T 8 -z -)|g' makepkg.conf
+cd -
 
 # Start installing
 ./xorg.sh

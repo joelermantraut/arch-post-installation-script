@@ -65,7 +65,7 @@ cd yay
 makepkg -si --noconfirm
 
 for PKG in "${PKGS[@]}"; do
-    yay -S $PKG --noeditmenu --noconfirm 2> ~/errors.txt
+    yay -S $PKG --noeditmenu --noconfirm
 done
 
 printf_c "AUR Software Installed"

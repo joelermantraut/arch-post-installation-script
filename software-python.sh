@@ -23,7 +23,7 @@ PKGS=(
 
 for PKG in "${PKGS[@]}"; do
     echo "Installing Python: ${PKG}"
-    pip install "$PKG" 2> ~/errors.txt
+    pip install "$PKG"
 done
 
 printf_c "Python Dependencies Installed"

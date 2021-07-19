@@ -137,7 +137,7 @@ PKGS=(
 
 for PKG in "${PKGS[@]}"; do
     echo "Installing: ${PKG}"
-    sudo pacman -S "$PKG" --noconfirm --needed 2> ~/errors.txt
+    sudo pacman -S "$PKG" --noconfirm --needed
 done
 
 printf_c "Software from Pacman Installed"
