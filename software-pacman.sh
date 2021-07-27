@@ -110,6 +110,8 @@ PKGS=(
 
     'papirus-icon-theme'
     'terminus-font'         # Font package with some bigger fonts for login terminal
+    'noto-fonts-emoji'      # Rofimoji Emojis
+    'ttf-anonymous-pro'
 
     # VIRTUALIZATION ------------------------------------------------------
 

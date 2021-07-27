@@ -50,6 +50,10 @@ PKGS=(
     'ttf-wps-fonts'
     'nerd-fonts-ubuntu-mono'
     'adapta-gtk-theme-git'
+    'nerd-fonts-iosevka'
+    'ttf-icomoon-feather'
+    'candy-icons-git'
+    'sweet-gtk-theme'
 )
 
 # Install Yay before use AUR

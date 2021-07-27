@@ -29,5 +29,39 @@ sudo password many times, if you didn't disable sudo timeout.
     ./setup.sh
 ```
 
+<<<<<<< HEAD
 ## Possible improvements
 - Divide global from local python dependencies
+=======
+## After post-installation
+There are some settings that cannot be scripted. For them, this sections describes my own method to do it.
+
+### Set up pass repository
+1. Copy .gnupg folder to home.
+2. Download password repository cloning it in home folder.
+3. Change its name to ".password-store".
+4. In password repository, there is a ".gpg-id" file. Copy its content.
+5. Run ```pass init {.gpg-id file copied content}```.
+6. Test it with known passwords to be sure it is working.
+
+### Setting up Sublime Text
+1. Install it.
+2. Copy config folder to $HOME/.config dir.
+3. Open it.
+4. Press ```Ctrl+Shift+P``` to open "Command Palette".
+5. Run ```Install Package Control```
+6. After that, run ```Install Package``` and search for these packages:
+  - Emmet
+  - Sass
+  - Jade
+  - AdvancedNewFile
+  - ColorPick
+  - SideBarEnhancements
+  - BracketHightlighter
+
+### Setting up Brave
+1. Go to https://chrome.google.com/webstore/category/themes?hl=es, and install a theme (last used: Nebula).
+2. Go to https://chrome.google.com/webstore/category/extensions?hl=es, and install this themes:
+    - Vimium
+    - One Tab
+>>>>>>> 03e665e72b79ac2c72b8cc7914e962f358fdc026
