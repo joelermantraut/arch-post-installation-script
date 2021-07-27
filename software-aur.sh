@@ -9,18 +9,16 @@ PKGS=(
     # UTILITIES -----------------------------------------------------------
 
     'dropbox'                   # Cloud file storage
-    'roficlip'
     'clipster'
     'foxitreader'
     'unetbootin'
-    'xdman'
-    'google-chrome'
-    'translate-shell'
+    #'xdman'
     'brave-bin'
 
     # TERMINAL ------------------------------------------------------------
 
     'hollywood'
+    'networkmanager-dmenu-git'
 
     # SETTINGS
 
@@ -30,11 +28,9 @@ PKGS=(
 
     # DEVELOPMENT ---------------------------------------------------------
     
-    'visual-studio-code-bin'    # Kickass text editor
     'truestudio'
-    'ttf-jetbrains-mono'        # Jetbrains Installer
     'prepros-bin'
-    'sublime-text'          # Text editors
+    'sublime-text'              # Text editors
 
     # OCTAVE -------------------------------------------------------------
 
@@ -43,19 +39,17 @@ PKGS=(
     # PRODUCTIVITY -------------------------------------------------------
 
     'wps-office'
-    'ttf-wps-fonts'
-    'nerd-fonts-ubuntu-mono'
 
     # MEDIA ---------------------------------------------------------------
 
-    'spotify'                   # Music player
+    'spotify-snap'                   # Music player
     'jmtpfs'
 
     # THEMES --------------------------------------------------------------
 
-    'gtk-theme-arc-git'
+    'ttf-wps-fonts'
+    'nerd-fonts-ubuntu-mono'
     'adapta-gtk-theme-git'
-    'lightdm-webkit-theme-aether'
 )
 
 # Install Yay before use AUR
@@ -65,7 +59,7 @@ cd yay
 makepkg -si --noconfirm
 
 for PKG in "${PKGS[@]}"; do
-    yay -S $PKG --noeditmenu --noconfirm
+    yay -S $PKG --noeditmenu --noconfirm --removemake --cleanafter
 done
 
 printf_c "AUR Software Installed"

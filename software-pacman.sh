@@ -9,8 +9,6 @@ PKGS=(
     # SYSTEM --------------------------------------------------------------
 
     'linux-lts'             # Long term support kernel
-    'urxvt'
-    'xterm'
     'pacman-contrib'
 
     # TERMINAL UTILITIES --------------------------------------------------
@@ -18,88 +16,75 @@ PKGS=(
     'alacritty'             # Main terminal emulator
     'file-roller'           # Archive utility
     'gnome-keyring'         # System password storage
-    'gufw'                  # Firewall manager
-    'inxi'                  # System information utility
+    #'gufw'                  # Firewall manager
+    #'inxi'                  # System information utility
     'neofetch'              # Shows system info when you launch terminal
     'numlockx'              # Turns on numlock in X11
-    'openssh'               # SSH connectivity tools
-    'speedtest-cli'         # Internet speed via terminal
-    'terminus-font'         # Font package with some bigger fonts for login terminal
+    #'openssh'               # SSH connectivity tools
     'unrar'                 # RAR compression program
     'unzip'                 # Zip compression program
     'wget'                  # Remote content retrieval
-    'konsole'               # Terminal emulator
     'zenity'                # Display graphical dialog boxes via shell scripts
     'zip'                   # Zip compression program
     'zsh'                   # ZSH shell
-    'zsh-completions'       # Tab completion for ZSH
-    'zsh-autosuggestions'
-    'zsh-syntax-highlighting'
-    'gawk'                  # For roficlip
     'htop'
     'gtop'
     'fzf'
     'jq'                    # JSON parsing library
     'jshon'                 # JSON parsing library
     'lm_sensors'
-    'bpython'
     'fff'
     'exa'
-    'network-manager-applet'
-    'localt'
-    'figlet'
+    'lolcat'                # Banner on terminal start
+    'figlet'                # Banner on terminal start
+    'xdotool'
+    'scrot'
 
-    # DISK UTILITIES ------------------------------------------------------
+    # DRIVES UTILITIES ------------------------------------------------------
 
     'udiskie'               # Auto-mounter
     'exfat-utils'           # Mount exFat drives
     'gparted'               # Disk utility
     'ntfs-3g'               # Open source implementation of NTFS file system
+     # ALL THIS NEEDED FOR PENDRIVES AND DISKS
+    'mtpfs'
+    'gvfs-mtp'
+    'gvfs-gphoto2'
 
     # GENERAL UTILITIES ---------------------------------------------------
 
     'pass'                  # Password manager
     'qutebrowser'
     'krusader'
-    'pcmanfm'
-    'ranger'
-    'qalculate'
+    'pcmanfm-gtk3'
+    'qalculate-gtk'
     'libqalculate'
-    'rofimoji'
     'lxappearance'
     'picom'
     'feh'
-    'spotblock'
-    'mtpfs'
-    'gvfs-mtp'
-    'gvfs-gphoto2'
     'trash-cli'
+    'lxtask'
+    'gpick'
 
     # DEVELOPMENT ---------------------------------------------------------
 
-    'atom'                  # Text editor
     'apache'                # Apache web server
     'clang'                 # C Lang compiler
     'cmake'                 # Cross-platform open-source make system
     'electron'              # Cross-platform development using Javascript
     'gcc'                   # C/C++ compiler
     'glibc'                 # C libraries
-    'mariadb'               # Drop-in replacement for MySQL
     'nodejs'                # Javascript runtime environment
     'npm'                   # Node package manager
     'php'                   # Web application scripting language
     'php-apache'            # Apache PHP driver
     'python'                # Scripting language
     'python-pip'
-    'neovim'
     'gedit'
-    'nano'
-    'kompare'
     'arduino'
     'arduino-cli'
     'arduino-avr-core'      # Arduino support
     'octave'
-    'pycharm-community-edition'
 
     # WEB TOOLS -----------------------------------------------------------
 
@@ -109,14 +94,11 @@ PKGS=(
 
     # MEDIA ---------------------------------------------------------------
 
-    'simplescreenrecorder'  # Record your screen
     'vlc'                   # Video player
-    'flameshot'             # Screen capture.
 
     # GRAPHICS AND DESIGN -------------------------------------------------
 
     'gcolor2'               # Colorpicker
-    'gimp'                  # GNU Image Manipulation Program
     'nomacs'                # Image viewer
     'pinta'                 # Simple image editor
 
@@ -126,8 +108,8 @@ PKGS=(
 
     # THEMES --------------------------------------------------------------
 
-    'breeze'
     'papirus-icon-theme'
+    'terminus-font'         # Font package with some bigger fonts for login terminal
 
     # VIRTUALIZATION ------------------------------------------------------
 

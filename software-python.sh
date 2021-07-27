@@ -5,18 +5,22 @@
 printf_c "Running Python Dependencies Installation"
 
 PKGS=(
-    "psutil"
-    "numpy"
-    "pynput"
-    "mouse"
-    "keyboard"
-    "screeninfo"
-    "selenium"
-    "pypdf2"
-    "pygame"
-    "pyautogui"
-    "selenium"
-    "neovim-remote"
+    #"psutil"
+    #"numpy"
+    #"pynput"
+    #"mouse"
+    #"keyboard"
+    "screeninfo"                        # Screenshot script
+    #"selenium"
+    #"pypdf2"
+    #"pygame"
+    #"pyautogui"
+    #"selenium"
+    "neovim-remote"                     # neovim
+    "i3-py"                             # Used by many scripts
+    "virtualenv"
+    "Xlib"                              # Passmenu Rofi script
+    "jedi-language-server"              # coc-pyjedi plugin
     # OCTAVE DEPENDENCIES
     "sympy==1.5.1"
 )

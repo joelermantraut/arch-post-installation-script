@@ -28,3 +28,6 @@ sudo password many times, if you didn't disable sudo timeout.
 ```c
     ./setup.sh
 ```
+
+## Possible improvements
+- Divide global from local python dependencies
