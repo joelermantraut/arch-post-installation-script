@@ -16,6 +16,7 @@ PKGS=(
     #"pygame"
     #"pyautogui"
     #"selenium"
+    "neovim"
     "neovim-remote"                     # neovim
     "i3-py"                             # Used by many scripts
     "virtualenv"

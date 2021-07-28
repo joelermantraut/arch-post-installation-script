@@ -27,6 +27,7 @@ mkdir Videos
 mkdir Apps
 
 # Start installing
+cd $HOME/arch-post-installation-script
 ./xorg.sh
 ./audio.sh
 ./bluetooth.sh

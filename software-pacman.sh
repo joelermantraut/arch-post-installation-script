@@ -39,6 +39,7 @@ PKGS=(
     'figlet'                # Banner on terminal start
     'xdotool'
     'scrot'
+    'wmctrl'                # For polywins
 
     # DRIVES UTILITIES ------------------------------------------------------
 
@@ -55,7 +56,6 @@ PKGS=(
 
     'pass'                  # Password manager
     'qutebrowser'
-    'krusader'
     'pcmanfm-gtk3'
     'qalculate-gtk'
     'libqalculate'
@@ -85,6 +85,7 @@ PKGS=(
     'arduino-cli'
     'arduino-avr-core'      # Arduino support
     'octave'
+    'neovim'
 
     # WEB TOOLS -----------------------------------------------------------
 
