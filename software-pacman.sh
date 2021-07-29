@@ -65,6 +65,7 @@ PKGS=(
     'trash-cli'
     'lxtask'
     'gpick'
+    'obconf'
 
     # DEVELOPMENT ---------------------------------------------------------
 

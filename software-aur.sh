@@ -10,9 +10,6 @@ PKGS=(
 
     'dropbox'                   # Cloud file storage
     'clipster'
-    'foxitreader'
-    'unetbootin'
-    #'xdman'
     'brave-bin'
 
     # TERMINAL ------------------------------------------------------------
