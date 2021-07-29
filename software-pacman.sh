@@ -38,6 +38,7 @@ PKGS=(
     'lolcat'                # Banner on terminal start
     'figlet'                # Banner on terminal start
     'xdotool'
+    'xsel'
     'scrot'
     'wmctrl'                # For polywins
 
@@ -87,6 +88,7 @@ PKGS=(
     'arduino-avr-core'      # Arduino support
     'octave'
     'neovim'
+    'codeblocks'
 
     # WEB TOOLS -----------------------------------------------------------
 
