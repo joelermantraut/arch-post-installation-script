@@ -38,7 +38,7 @@ PKGS=(
     'lolcat'                # Banner on terminal start
     'figlet'                # Banner on terminal start
     'xdotool'
-    'xsel'
+    'xclip'
     'scrot'
     'wmctrl'                # For polywins
 
