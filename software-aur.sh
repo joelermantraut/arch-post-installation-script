@@ -27,7 +27,6 @@ PKGS=(
     
     'truestudio'
     'prepros-bin'
-    'sublime-text'              # Text editors
 
     # OCTAVE -------------------------------------------------------------
 

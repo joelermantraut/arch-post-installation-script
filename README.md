@@ -29,10 +29,9 @@ sudo password many times, if you didn't disable sudo timeout.
     ./setup.sh
 ```
 
-<<<<<<< HEAD
 ## Possible improvements
 - Divide global from local python dependencies
-=======
+
 ## After post-installation
 There are some settings that cannot be scripted. For them, this sections describes my own method to do it.
 
