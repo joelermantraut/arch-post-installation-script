@@ -29,9 +29,6 @@ sudo password many times, if you didn't disable sudo timeout.
     ./setup.sh
 ```
 
-## Possible improvements
-- Divide global from local python dependencies
-
 ## After post-installation
 There are some settings that cannot be scripted. For them, this sections describes my own method to do it.
 
@@ -60,7 +57,6 @@ There are some settings that cannot be scripted. For them, this sections describ
 
 ### Setting up Brave
 1. Go to https://chrome.google.com/webstore/category/themes?hl=es, and install a theme (last used: Nebula).
-2. Go to https://chrome.google.com/webstore/category/extensions?hl=es, and install this themes:
+2. Go to https://chrome.google.com/webstore/category/extensions?hl=es, and install this plugins:
     - Vimium
     - One Tab
->>>>>>> 03e665e72b79ac2c72b8cc7914e962f358fdc026
