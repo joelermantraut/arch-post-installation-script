@@ -30,7 +30,7 @@ sudo password many times, if you didn't disable sudo timeout.
 ```
 
 ## After post-installation
-There are some settings that cannot be scripted. For them, this sections describes my own method to do it.
+There are some settings that cannot be scripted. For them, this sections describes my own method.
 
 ### Set up pass repository
 1. Copy .gnupg folder to home.
