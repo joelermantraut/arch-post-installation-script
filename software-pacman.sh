@@ -16,11 +16,8 @@ PKGS=(
     'alacritty'             # Main terminal emulator
     'file-roller'           # Archive utility
     'gnome-keyring'         # System password storage
-    #'gufw'                  # Firewall manager
-    #'inxi'                  # System information utility
     'neofetch'              # Shows system info when you launch terminal
     'numlockx'              # Turns on numlock in X11
-    #'openssh'               # SSH connectivity tools
     'unrar'                 # RAR compression program
     'unzip'                 # Zip compression program
     'wget'                  # Remote content retrieval
@@ -41,6 +38,7 @@ PKGS=(
     'xclip'
     'scrot'
     'wmctrl'                # For polywins
+    'rsync'
 
     # DRIVES UTILITIES ------------------------------------------------------
 

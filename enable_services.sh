@@ -9,4 +9,5 @@ sudo systemctl enable bluetooth.service
 
 cp betterlockscreen@.service /etc/systemd/system/
 systemctl enable betterlockscreen@$USER
+betterlockscreen -u $HOME/Imagenes/slideshow
 

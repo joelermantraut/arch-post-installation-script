@@ -28,3 +28,4 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 nvim +PlugInstall +qall
 nvim +"CocInstall coc-sh coc-clangd coc-css coc-go coc-html coc-tsserver coc-json coc-jedi" +qall
 nvim +"CocInstall clangd.install" +qall
+nvim +"CocInstall coc-prettier coc-pairs" +qall

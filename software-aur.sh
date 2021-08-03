@@ -16,6 +16,7 @@ PKGS=(
 
     'hollywood'
     'networkmanager-dmenu-git'
+    'pulseaudio-control'
 
     # SETTINGS
 
