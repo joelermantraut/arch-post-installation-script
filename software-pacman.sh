@@ -91,7 +91,6 @@ PKGS=(
     # WEB TOOLS -----------------------------------------------------------
 
     'chromium'              # Web browser
-    'firefox'               # Web browser
     'discord'
 
     # MEDIA ---------------------------------------------------------------
@@ -103,10 +102,12 @@ PKGS=(
     'gcolor2'               # Colorpicker
     'nomacs'                # Image viewer
     'pinta'                 # Simple image editor
+    'obs-studio'
 
     # PRODUCTIVITY --------------------------------------------------------
 
     'mupdf'                  # PDF viewer
+    'rofimoji'
 
     # THEMES --------------------------------------------------------------
 
