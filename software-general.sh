@@ -12,12 +12,12 @@ git clone https://github.com/joelermantraut/dmenu-own-compilation.git
 cd dmenu-own-compilation
 make && sudo make install
 
-echo "\nInstalling Polybar Themes\n"
-cd $HOME
-$ git clone --depth=1 https://github.com/adi1090x/polybar-themes.git
-cd polybar-themes
-chmod +x setup.sh
-./setup.sh
+#echo "\nInstalling Polybar Themes\n"
+#cd $HOME
+#$ git clone --depth=1 https://github.com/adi1090x/polybar-themes.git
+#cd polybar-themes
+#chmod +x setup.sh
+#./setup.sh
 
 echo "\nInstalling Oh-My-Zsh\n"
 cd $HOME

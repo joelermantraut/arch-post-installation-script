@@ -27,16 +27,16 @@ make_from_git() {
 }
 
 # Install snap
-make_from_git "https://aur.archlinux.org/snapd.git" "snapd"
-sudo systemctl enable --now snapd.socket
-sudo ln -s /var/lib/snapd/snap /snap
+#make_from_git "https://aur.archlinux.org/snapd.git" "snapd"
+#sudo systemctl enable --now snapd.socket
+#sudo ln -s /var/lib/snapd/snap /snap
 
 # Install Zoom
 make_from_git "https://aur.archlinux.org/zoom.git" "zoom"
 
 # Install ZSH plugins
-git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
 
 printf_c "Git Software Installed"
