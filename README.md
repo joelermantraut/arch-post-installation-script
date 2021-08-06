@@ -41,7 +41,7 @@ There are some settings that cannot be scripted. For them, this sections describ
 6. Test it with known passwords to be sure it is working.
 
 ### Setting up Sublime Text
-1. Install it.
+1. Install it (already done by script).
 2. Copy config folder to $HOME/.config dir.
 3. Open it.
 4. Press ```Ctrl+Shift+P``` to open "Command Palette".
@@ -60,3 +60,14 @@ There are some settings that cannot be scripted. For them, this sections describ
 2. Go to https://chrome.google.com/webstore/category/extensions?hl=es, and install this plugins:
     - Vimium
     - One Tab
+
+### Setting up VirtualBox
+1. Install it (already done by script).
+2. Open VirtualBox in root mode: `sudo virtualbox`.
+3. Download ["VirtualBox Extension Pack"](https://download.virtualbox.org/virtualbox/6.1.26/Oracle_VM_VirtualBox_Extension_Pack-6.1.26.vbox-extpack). 
+4. Go to File->Preferences->Extensions.
+5. Click on "Add new extension".
+6. Select the downloaded Extension Pack file.
+7. Select "Install".
+8. Accept license.
+9. And it will be ready to use.
