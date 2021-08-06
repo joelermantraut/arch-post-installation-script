@@ -14,9 +14,9 @@ PKGS=(
 
     # TERMINAL ------------------------------------------------------------
 
-    'hollywood'
     'networkmanager-dmenu-git'
     'pulseaudio-control'
+    'font-manager'
 
     # SETTINGS
 

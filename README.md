@@ -64,7 +64,7 @@ There are some settings that cannot be scripted. For them, this sections describ
 ### Setting up VirtualBox
 1. Install it (already done by script).
 2. Open VirtualBox in root mode: `sudo virtualbox`.
-3. Download ["VirtualBox Extension Pack"](https://download.virtualbox.org/virtualbox/6.1.26/Oracle_VM_VirtualBox_Extension_Pack-6.1.26.vbox-extpack). 
+3. Download [VirtualBox Extension Pack](https://download.virtualbox.org/virtualbox/6.1.26/Oracle_VM_VirtualBox_Extension_Pack-6.1.26.vbox-extpack). 
 4. Go to File->Preferences->Extensions.
 5. Click on "Add new extension".
 6. Select the downloaded Extension Pack file.
