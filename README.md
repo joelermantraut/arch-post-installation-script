@@ -56,8 +56,8 @@ There are some settings that cannot be scripted. For them, this sections describ
   - BracketHightlighter
 
 ### Setting up Brave
-1. Go to https://chrome.google.com/webstore/category/themes?hl=es, and install a theme (last used: Nebula).
-2. Go to https://chrome.google.com/webstore/category/extensions?hl=es, and install this plugins:
+1. Go to [Themes](https://chrome.google.com/webstore/category/themes?hl=es), and install a theme (last used: Nebula).
+2. Go to [Plugins](https://chrome.google.com/webstore/category/extensions?hl=es), and install this plugins:
     - Vimium
     - One Tab
 
