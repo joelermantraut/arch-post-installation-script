@@ -39,6 +39,7 @@ PKGS=(
     'scrot'
     'wmctrl'                # For polywins
     'rsync'
+    'ncdu'                  # To view storage
 
     # DRIVES UTILITIES ------------------------------------------------------
 

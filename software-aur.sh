@@ -11,11 +11,12 @@ PKGS=(
     'dropbox'                   # Cloud file storage
     'clipster'
     'brave-bin'
+    'slack-desktop'
+    'franz'
 
     # TERMINAL ------------------------------------------------------------
 
     'networkmanager-dmenu-git'
-    'pulseaudio-control'
     'font-manager'
 
     # SETTINGS
