@@ -13,6 +13,7 @@ PKGS=(
     'brave-bin'
     'slack-desktop'
     'franz'
+    'foxitreader'
 
     # TERMINAL ------------------------------------------------------------
 
@@ -50,6 +51,7 @@ PKGS=(
     'adapta-gtk-theme-git'
     'candy-icons-git'
     'sweet-gtk-theme'
+    'arch-silence-grub-theme-git'
 )
 
 # Install Yay before use AUR
