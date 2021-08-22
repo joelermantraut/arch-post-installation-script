@@ -14,6 +14,7 @@ PKGS=(
     'slack-desktop'
     'franz'
     'foxitreader'
+    'teamviewer'
 
     # TERMINAL ------------------------------------------------------------
 

@@ -11,7 +11,7 @@ PKGS=(
     'lightdm'
     'lightdm-gtk-greeter'
     'lightdm-gtk-greeter-settings'
-    'openbox'
+    'plasma-desktop'
 )
 
 for PKG in "${PKGS[@]}"; do
