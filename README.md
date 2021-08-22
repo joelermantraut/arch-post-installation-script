@@ -30,7 +30,7 @@ sudo password many times, if you didn't disable sudo timeout.
 ```
 
 ## After post-installation
-There are some settings that cannot be scripted. For them, this sections describes my own method.
+There are some settings that cannot be scripted. For them, this sections describes MY OWN METHOD.
 
 ### Set up pass repository
 1. Copy .gnupg folder to home.
@@ -55,11 +55,12 @@ There are some settings that cannot be scripted. For them, this sections describ
   - SideBarEnhancements
   - BracketHightlighter
 
-### Setting up Brave
+### Setting up Browser (chromium based for this plugins) 
 1. Go to [Themes](https://chrome.google.com/webstore/category/themes?hl=es), and install a theme (last used: Nebula).
 2. Go to [Plugins](https://chrome.google.com/webstore/category/extensions?hl=es), and install this plugins:
     - Vimium
     - One Tab
+    - Super Simple Highlighter
 
 ### Setting up VirtualBox
 1. Install it (already done by script).
