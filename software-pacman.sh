@@ -40,6 +40,7 @@ PKGS=(
     'wmctrl'                # For polywins
     'rsync'
     'ncdu'                  # To view storage
+    'tk'
 
     # DRIVES UTILITIES ------------------------------------------------------
 
@@ -104,6 +105,7 @@ PKGS=(
     'nomacs'                # Image viewer
     'pinta'                 # Simple image editor
     'obs-studio'
+    'arandr'
 
     # PRODUCTIVITY --------------------------------------------------------
 
