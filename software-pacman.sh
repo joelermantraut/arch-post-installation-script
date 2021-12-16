@@ -8,7 +8,7 @@ PKGS=(
 
     # SYSTEM --------------------------------------------------------------
 
-    'linux-lts'             # Long term support kernel
+    'linux-headers'
     'pacman-contrib'
 
     # TERMINAL UTILITIES --------------------------------------------------

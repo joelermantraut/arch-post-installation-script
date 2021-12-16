@@ -27,6 +27,15 @@ if [ $NVIDIA -gt $CERO ]; then
         'opencl-nvidia'
         'nvidia-settings'
     )
+    # Some old graphics cards would need "nvidia-470xx-dkms"
+    # In that case, this PKGS are recommended
+    # PKGS=(
+    #     'xorg-server'           # XOrg server
+    #     'xorg-apps'             # XOrg apps group
+    #     'xorg-xinit'            # XOrg init
+    #     'nvidia-settings'
+    # )
+    # And dkms package must be installed from AUR (software-aur.sh)
 
 elif [ $AMD -gt $CERO ]; then
 

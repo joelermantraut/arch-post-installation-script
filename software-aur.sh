@@ -6,6 +6,10 @@ printf_c "Running AUR Software Installation"
 
 PKGS=(
 
+    # SYSTEM --------------------------------------------------------------
+
+    'nvidia-470xx-dkms'  
+
     # UTILITIES -----------------------------------------------------------
 
     'dropbox'                   # Cloud file storage
