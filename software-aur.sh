@@ -29,7 +29,7 @@ PKGS=(
 
     'grub-customizer'
     'betterlockscreen'
-    'polybar'
+    'polybar-git'
 
     # DEVELOPMENT ---------------------------------------------------------
     
