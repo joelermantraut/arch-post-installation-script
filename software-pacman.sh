@@ -41,6 +41,7 @@ PKGS=(
     'rsync'
     'ncdu'                  # To view storage
     'tk'
+    'bpython'
 
     # DRIVES UTILITIES ------------------------------------------------------
 

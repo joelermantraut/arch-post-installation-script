@@ -34,7 +34,6 @@ cd $HOME/arch-post-installation-script
 ./desktop.sh
 ./software-pacman.sh
 ./software-aur.sh
-./software-general.sh
 ./software-git.sh
 ./software-python.sh
 ./setting_up.sh

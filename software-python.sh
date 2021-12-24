@@ -6,7 +6,6 @@ printf_c "Running Python Dependencies Installation"
 
 PKGS=(
     "screeninfo"                        # Screenshot script
-    "bpython"
     "neovim"
     "neovim-remote"                     # neovim
     "i3-py"                             # Used by many scripts
