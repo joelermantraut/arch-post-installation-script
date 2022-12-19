@@ -38,7 +38,8 @@ There are some settings that cannot be scripted. For them, this sections describ
 3. Change its name to ".password-store".
 4. In password repository, there is a ".gpg-id" file. Copy its content.
 5. Run ```pass init {.gpg-id file copied content}```.
-6. Test it with known passwords to be sure it is working.
+6. Run ```chmod 700 ~/.gnupg/```, to avoid warning.
+7. Test it with known passwords to be sure it is working.
 
 ### Setting up Sublime Text
 1. Install it (already done by script).
