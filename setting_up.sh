@@ -10,11 +10,6 @@ yes | rm .gitignore README.md
 cd ..
 yes | cp -r dotfiles/. $HOME
 
-# Copy images to directory
-cd Imagenes
-git clone https://github.com/joelermantraut/wallpapers.git
-mv wallpapers slideshow # Change name
-
 # Links script to path
 ln -sf $HOME/.config/scripts/dmenu_run_styled /usr/local/bin
 ln -sf $HOME/.config/scripts/dmenu_styled /usr/local/bin
