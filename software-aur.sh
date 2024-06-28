@@ -18,7 +18,7 @@ PKGS=(
     'slack-desktop'
     'franz'
     'foxitreader'
-    'teamviewer'
+    'anydesk-bin'
 
     # TERMINAL ------------------------------------------------------------
 
