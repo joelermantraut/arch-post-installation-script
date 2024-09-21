@@ -29,7 +29,7 @@ sudo password many times, if you didn't disable sudo timeout.
     ./setup.sh
 ```
 
-## After post-installation
+## After run script
 There are some settings that cannot be scripted. For them, this sections describes MY OWN METHOD.
 
 ### Set up pass repository
